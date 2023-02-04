@@ -1,0 +1,85 @@
+section {
+  padding: 20px;
+  border: 5px double black;
+  margin: 20px;
+}
+
+body {
+  font-family: monospace;
+  color: black;
+  background-color: rgb(60, 85, 100);
+}
+
+#rolldice {
+  text-align: center;
+  padding: 7px;
+  border: 3px double black;
+  margin: 10px;
+  font-size: 120%;
+}
+
+#boxselection {
+  text-align: center;
+  padding: 7px;
+  border: 3px double black;
+  margin: 10px;
+}
+
+#title {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  background-color: rgb(60, 85, 100);
+}
+
+#roll_dice {
+  background-color: rgb(170, 195, 210);
+  border: 3px double black;
+}
+
+#submit {
+  background-color: rgb(170, 195, 210);
+  border: 3px double black;
+}
+
+#finish {
+  background-color: rgb(170, 195, 210);
+  border: 3px double black;
+}
+
+#line {
+  border: 1px double black;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  border: 1px double black;
+  text-align: center;
+}
+
+#numbers {
+  background-color: rgb(110, 135, 150);
+}
+
+tbody {
+  border: 0;
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+  width: 120px;
+}
+
+/* boxes corresponding to disabled checkboxes are displayed in a different color.*/

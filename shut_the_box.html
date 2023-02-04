@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title> Shut The Box </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="shut_the_box.js" defer> </script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1 id=title> Shut The Box </h1>
+    </header>
+
+    <main>
+
+      <section>
+        <h2> The Rules </h2>
+        <ol type="i">
+          <li> Each turn, you roll the dice (or die) and select 1 or more boxes which sum to the value of your roll. </li>
+          <li> You will not be allowed to pick the boxes which you choose on subsequent turns. </li>
+          <li> When the sum of the boxes which are left is less than or equal to 6, you will only roll a single die. </li>
+          <li> When you cannot make a move or you give up, the sum of the boxes which are left gives your score. </li>
+          <li> Lower scores are better and a score of 0 is called "shutting the box". </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2> Dice Roll </h2>
+        <fieldset id=rolldice>
+          <input type="button" value="Roll Dice" id="roll_dice">
+          Result: <span> </span>
+
+        </fieldset>
+      </section>
+
+      <section>
+        <h2> Box selection </h2>
+
+        <table>
+
+          <thead id="numbers">
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+          </thead>
+
+          <tbody id="boxes">
+            <tr>
+              <td><input type="checkbox" id=1></td>
+              <td><input type="checkbox" id=2></td>
+              <td><input type="checkbox" id=3></td>
+              <td><input type="checkbox" id=4></td>
+              <td><input type="checkbox" id=5></td>
+              <td><input type="checkbox" id=6></td>
+              <td><input type="checkbox" id=7></td>
+              <td><input type="checkbox" id=8></td>
+              <td><input type="checkbox" id=9></td>
+            </tr>
+          </tbody>
+
+        </table>
+
+        <fieldset id=boxselection>
+          <input type="button" value="Submit box selection" id="submit">
+          <input type="button" value="I give up / I can’t make a valid move" id="finish">
+        </fieldset>
+      </section>
+
+    </main>
+
+    <footer id=footer>
+      <hr id=line>
+      <p> <i> &copy; Lujayn Megally, 2022 </i> </p>
+    </footer>
+  </body>
+
+</html>
